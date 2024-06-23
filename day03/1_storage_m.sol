@@ -32,8 +32,8 @@ contract Storage {
     }
 
     function removeStruct(uint256 i) public {
-        simple[i] = simple[size];
-        delete simple[size];
+        simple[i] = simple[size-1];
+        delete simple[size-1];
         size--;
     }
 }
